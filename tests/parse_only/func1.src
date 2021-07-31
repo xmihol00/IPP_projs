@@ -1,0 +1,72 @@
+.IPPcode21
+
+# compiler variables definition
+DEFVAR GF@?temp&1
+DEFVAR GF@?temp&2
+DEFVAR GF@?temp&3
+DEFVAR GF@?temp&4
+DEFVAR GF@?temp&5
+DEFVAR GF@?temp&6
+DEFVAR GF@?_&
+
+# variables of non recursive functions definition
+DEFVAR GF@x&13
+DEFVAR GF@y&14
+DEFVAR GF@i&15
+DEFVAR GF@j&16
+DEFVAR GF@a&17
+DEFVAR GF@b&18
+DEFVAR GF@a&19
+
+# registers definition
+DEFVAR GF@r%1&
+
+JUMP $main
+
+# $foo: definition start
+LABEL $foo
+MOVE GF@i&15 GF@x&13
+ADD GF@r%1& int@2 GF@y&14
+MUL GF@j&16 GF@r%1& int@3
+DEFVAR GF@abc
+ADD GF@abc int@1 GF@j&16
+PUSHS GF@abc
+ADD GF@j&16 int@1 GF@i&15
+POPS GF@i&15
+PUSHS GF@i&15
+PUSHS GF@j&16
+RETURN
+RETURN
+# $foo: definition end
+
+
+# $main: definition start
+LABEL $main
+MOVE GF@x&13 int@1
+MOVE GF@y&14 int@2
+CALL $foo
+POPS GF@b&18
+POPS GF@a&17
+
+# if statement start
+LT GF@r%1& GF@a&17 GF@b&18
+JUMPIFNEQ $main_if1_1 GF@r%1& bool@true
+WRITE GF@a&17
+WRITE string@<
+WRITE GF@b&18
+WRITE string@\010
+WRITE int@666
+JUMP $main_ifend1
+LABEL $main_if1_1
+WRITE GF@a&17
+WRITE string@>=
+WRITE GF@b&18
+WRITE string@\010
+MOVE GF@a&17 int@33
+LABEL $main_ifend1
+# if statement end
+
+WRITE GF@a&17
+WRITE string@\010
+EXIT int@0
+# $main: definition end

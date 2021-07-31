@@ -1,0 +1,10 @@
+.IPPcode21
+
+DEFVAR GF@b
+DEFVAR GF@a
+DEFVAR GF@c
+
+MOVE GF@a int@1
+MOVE GF@b int@2
+
+CONCAT GF@c GF@a GF@b

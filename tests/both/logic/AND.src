@@ -1,0 +1,34 @@
+.IPPcode21
+
+CREATEFRAME
+DEFVAR TF@v1
+DEFVAR TF@v2
+DEFVAR TF@res
+MOVE TF@v1 bool@true
+MOVE TF@v2 bool@true
+
+AND TF@res TF@v1 TF@v2
+WRITE TF@res
+WRITE string@\010
+
+AND TF@res bool@false bool@true
+WRITE TF@res
+WRITE string@\010
+
+AND TF@res TF@v1 bool@true
+WRITE TF@res
+WRITE string@\010
+
+AND TF@res bool@true TF@v1
+WRITE TF@res
+WRITE string@\010
+
+AND TF@res bool@false TF@v1
+WRITE TF@res
+WRITE string@\010
+
+PUSHFRAME
+AND LF@res LF@v2 LF@v1
+WRITE LF@res
+WRITE string@\010
+

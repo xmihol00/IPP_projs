@@ -1,0 +1,12 @@
+.IPPcode21
+
+DEFVAR GF@val
+MOVE GF@val int@2
+
+CALL f2
+EXIT int@0
+
+LABEL f2
+WRITE GF@val
+WRITE string@\010
+RETURN

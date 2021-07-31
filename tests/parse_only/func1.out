@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program language="IPPcode21">
+  <instruction order="1" opcode="DEFVAR">
+    <arg1 type="var">GF@?temp&amp;1</arg1>
+  </instruction>
+  <instruction order="2" opcode="DEFVAR">
+    <arg1 type="var">GF@?temp&amp;2</arg1>
+  </instruction>
+  <instruction order="3" opcode="DEFVAR">
+    <arg1 type="var">GF@?temp&amp;3</arg1>
+  </instruction>
+  <instruction order="4" opcode="DEFVAR">
+    <arg1 type="var">GF@?temp&amp;4</arg1>
+  </instruction>
+  <instruction order="5" opcode="DEFVAR">
+    <arg1 type="var">GF@?temp&amp;5</arg1>
+  </instruction>
+  <instruction order="6" opcode="DEFVAR">
+    <arg1 type="var">GF@?temp&amp;6</arg1>
+  </instruction>
+  <instruction order="7" opcode="DEFVAR">
+    <arg1 type="var">GF@?_&amp;</arg1>
+  </instruction>
+  <instruction order="8" opcode="DEFVAR">
+    <arg1 type="var">GF@x&amp;13</arg1>
+  </instruction>
+  <instruction order="9" opcode="DEFVAR">
+    <arg1 type="var">GF@y&amp;14</arg1>
+  </instruction>
+  <instruction order="10" opcode="DEFVAR">
+    <arg1 type="var">GF@i&amp;15</arg1>
+  </instruction>
+  <instruction order="11" opcode="DEFVAR">
+    <arg1 type="var">GF@j&amp;16</arg1>
+  </instruction>
+  <instruction order="12" opcode="DEFVAR">
+    <arg1 type="var">GF@a&amp;17</arg1>
+  </instruction>
+  <instruction order="13" opcode="DEFVAR">
+    <arg1 type="var">GF@b&amp;18</arg1>
+  </instruction>
+  <instruction order="14" opcode="DEFVAR">
+    <arg1 type="var">GF@a&amp;19</arg1>
+  </instruction>
+  <instruction order="15" opcode="DEFVAR">
+    <arg1 type="var">GF@r%1&amp;</arg1>
+  </instruction>
+  <instruction order="16" opcode="JUMP">
+    <arg1 type="label">$main</arg1>
+  </instruction>
+  <instruction order="17" opcode="LABEL">
+    <arg1 type="label">$foo</arg1>
+  </instruction>
+  <instruction order="18" opcode="MOVE">
+    <arg1 type="var">GF@i&amp;15</arg1>
+    <arg2 type="var">GF@x&amp;13</arg2>
+  </instruction>
+  <instruction order="19" opcode="ADD">
+    <arg1 type="var">GF@r%1&amp;</arg1>
+    <arg2 type="int">2</arg2>
+    <arg3 type="var">GF@y&amp;14</arg3>
+  </instruction>
+  <instruction order="20" opcode="MUL">
+    <arg1 type="var">GF@j&amp;16</arg1>
+    <arg2 type="var">GF@r%1&amp;</arg2>
+    <arg3 type="int">3</arg3>
+  </instruction>
+  <instruction order="21" opcode="DEFVAR">
+    <arg1 type="var">GF@abc</arg1>
+  </instruction>
+  <instruction order="22" opcode="ADD">
+    <arg1 type="var">GF@abc</arg1>
+    <arg2 type="int">1</arg2>
+    <arg3 type="var">GF@j&amp;16</arg3>
+  </instruction>
+  <instruction order="23" opcode="PUSHS">
+    <arg1 type="var">GF@abc</arg1>
+  </instruction>
+  <instruction order="24" opcode="ADD">
+    <arg1 type="var">GF@j&amp;16</arg1>
+    <arg2 type="int">1</arg2>
+    <arg3 type="var">GF@i&amp;15</arg3>
+  </instruction>
+  <instruction order="25" opcode="POPS">
+    <arg1 type="var">GF@i&amp;15</arg1>
+  </instruction>
+  <instruction order="26" opcode="PUSHS">
+    <arg1 type="var">GF@i&amp;15</arg1>
+  </instruction>
+  <instruction order="27" opcode="PUSHS">
+    <arg1 type="var">GF@j&amp;16</arg1>
+  </instruction>
+  <instruction order="28" opcode="RETURN"/>
+  <instruction order="29" opcode="RETURN"/>
+  <instruction order="30" opcode="LABEL">
+    <arg1 type="label">$main</arg1>
+  </instruction>
+  <instruction order="31" opcode="MOVE">
+    <arg1 type="var">GF@x&amp;13</arg1>
+    <arg2 type="int">1</arg2>
+  </instruction>
+  <instruction order="32" opcode="MOVE">
+    <arg1 type="var">GF@y&amp;14</arg1>
+    <arg2 type="int">2</arg2>
+  </instruction>
+  <instruction order="33" opcode="CALL">
+    <arg1 type="label">$foo</arg1>
+  </instruction>
+  <instruction order="34" opcode="POPS">
+    <arg1 type="var">GF@b&amp;18</arg1>
+  </instruction>
+  <instruction order="35" opcode="POPS">
+    <arg1 type="var">GF@a&amp;17</arg1>
+  </instruction>
+  <instruction order="36" opcode="LT">
+    <arg1 type="var">GF@r%1&amp;</arg1>
+    <arg2 type="var">GF@a&amp;17</arg2>
+    <arg3 type="var">GF@b&amp;18</arg3>
+  </instruction>
+  <instruction order="37" opcode="JUMPIFNEQ">
+    <arg1 type="label">$main_if1_1</arg1>
+    <arg2 type="var">GF@r%1&amp;</arg2>
+    <arg3 type="bool">true</arg3>
+  </instruction>
+  <instruction order="38" opcode="WRITE">
+    <arg1 type="var">GF@a&amp;17</arg1>
+  </instruction>
+  <instruction order="39" opcode="WRITE">
+    <arg1 type="string">&lt;</arg1>
+  </instruction>
+  <instruction order="40" opcode="WRITE">
+    <arg1 type="var">GF@b&amp;18</arg1>
+  </instruction>
+  <instruction order="41" opcode="WRITE">
+    <arg1 type="string">\010</arg1>
+  </instruction>
+  <instruction order="42" opcode="WRITE">
+    <arg1 type="int">666</arg1>
+  </instruction>
+  <instruction order="43" opcode="JUMP">
+    <arg1 type="label">$main_ifend1</arg1>
+  </instruction>
+  <instruction order="44" opcode="LABEL">
+    <arg1 type="label">$main_if1_1</arg1>
+  </instruction>
+  <instruction order="45" opcode="WRITE">
+    <arg1 type="var">GF@a&amp;17</arg1>
+  </instruction>
+  <instruction order="46" opcode="WRITE">
+    <arg1 type="string">&gt;=</arg1>
+  </instruction>
+  <instruction order="47" opcode="WRITE">
+    <arg1 type="var">GF@b&amp;18</arg1>
+  </instruction>
+  <instruction order="48" opcode="WRITE">
+    <arg1 type="string">\010</arg1>
+  </instruction>
+  <instruction order="49" opcode="MOVE">
+    <arg1 type="var">GF@a&amp;17</arg1>
+    <arg2 type="int">33</arg2>
+  </instruction>
+  <instruction order="50" opcode="LABEL">
+    <arg1 type="label">$main_ifend1</arg1>
+  </instruction>
+  <instruction order="51" opcode="WRITE">
+    <arg1 type="var">GF@a&amp;17</arg1>
+  </instruction>
+  <instruction order="52" opcode="WRITE">
+    <arg1 type="string">\010</arg1>
+  </instruction>
+  <instruction order="53" opcode="EXIT">
+    <arg1 type="int">0</arg1>
+  </instruction>
+</program>

@@ -1,0 +1,7 @@
+.IPPcode21
+
+DEFVAR GF@var
+
+TYPE GF@var GF@var
+WRITE GF@var
+WRITE string@\010

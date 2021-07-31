@@ -1,0 +1,118 @@
+
+#ahoj
+  .IPPcode21 #ahoj
+# comment
+MOVE GF@var1 int@-1
+moVE TF@_-$&%*!? LF@_123#comment
+
+CREATEFRAME ###aa
+crEATEframe#test 123 456
+
+        PUSHFRAME   
+pushframe#test      aa
+
+POPFRAME
+popframe
+
+DEFvar GF@_# comment
+DEFVAR LF@ahoj
+
+CALL _-$&%*!?        # comment
+call $label%#           
+
+RETURN # comment
+  return#comment        
+
+pushs GF@$
+PUSHS LF@_
+puSHs int@8547
+
+PoPs TF@-#comment
+POPS    GF@$1
+
+ADD LF@& bool@false bool@true # wrong semantic
+add TF@% string@hello int@-23#comment
+Add LF@* GF@! TF@? # comment
+
+SUB GF@!123         string@str     int@85   
+sub LF@??? nil@nil  nil@nil#comment
+
+MuL TF@_8   GF@VAR  LF@vaR  
+MUL GF@var TF@var%$ int@-82#cc
+
+IDIV TF@v1 LF@v2 GF@v3 # comment
+  iDIV GF@v4 bool@false string@\123\456\789abs#comment
+
+Lt GF@_1        int@1 int@2
+ LT TF@?2 GF@!3 string@STR\000str'" #comment
+
+  GT  LF@a_b!c?d-e$d%e*f!g?h nil@nil  bool@true#comment
+gt GF@variable123456789 string@______ TF@_____#comment
+
+EQ TF@x int@-985    string@\123a\222b\321c 
+
+AnD GF@_-_-_ int@85 bool@true# comment
+#abc def gh
+
+OR TF@aaaaaa string@abcdefghijklmnopqrstuvwxyz  int@-8 #\\\##
+
+nOt LF@v8 GF@v9 
+
+int2CHAR    GF@IPP int@85#####
+
+STRi2int    GF@i_p_P    string@jaj  nil@nil     
+
+#comment
+READ GF@v int#comment
+ read  TF@read  string
+REad LF@b bool  #comment
+# comment a b c defg
+
+WRITE int@88#comment
+write string@\123 #comment
+wRiTe TF@abc    #   comment
+
+CONCAT GF@$$$$ int@1 bool@false #@@@\\\
+concat GF@???? TF@--- LF@CONCAT
+
+STRlen GF@a-b string@\101\220#comment
+STRLEN TF@bbb LF@CCc
+strlen TF@abc int@-8
+
+GETCHAR GF@GETCHAR int@1 bool@true
+getCHAR TF@ii string@abc LF@var1
+
+SETchar LF@-* int@1 TF@anc #comment
+setchar GF@o LF@a string@1234567890
+
+tyPE LF@e nil@nil   #comment
+    TYPE     GF@u     bool@false#comment
+
+Label $#
+LABEL   !123    #comment
+label label
+LABEL LABEL#comment
+label string
+LAbeL PUSHFRAME
+
+JUMP    WRITE   
+jump READ # comment
+JumP _b!c?d-e$d%e*f!g?h
+
+JUMPIFEQ Idiv int@88 bool@false
+jumpIFeq ___ GF@STRLEN TF@false
+
+JUMPifNEQ MUL nil@nil bool@true         ##
+    jumpifneq   label   GF@$1   TF@!2   
+
+EXIT int@-33
+EXIT string@bye#
+EXIT TF@var__?
+
+dPRINT TF@LoL #comment
+dPRINT int@55
+
+break#comment
+BREAK
+breAK #comment
+

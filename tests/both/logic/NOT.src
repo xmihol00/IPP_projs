@@ -1,0 +1,24 @@
+.IPPcode21
+
+DEFVAR GF@res
+DEFVAR GF@true
+DEFVAR GF@false
+
+MOVE GF@true bool@true
+MOVE GF@false bool@false
+
+NOT GF@res GF@true
+WRITE GF@res
+WRITE string@\010
+
+NOT GF@res GF@false
+WRITE GF@res
+WRITE string@\010
+
+NOT GF@res bool@true
+WRITE GF@res
+WRITE string@\010
+
+NOT GF@res bool@false
+WRITE GF@res
+WRITE string@\010

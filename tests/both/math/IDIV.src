@@ -1,0 +1,80 @@
+
+.IPPcode21
+
+DEFVAR GF@num
+DEFVAR GF@int
+MOVE GF@int int@8
+
+IDIV GF@num int@36 int@15
+WRITE GF@num
+WRITE string@\010
+
+IDIV GF@num GF@int int@12
+WRITE GF@num
+WRITE string@\010
+
+IDIV GF@num int@-32 GF@int
+WRITE GF@num
+WRITE string@\010
+
+IDIV GF@num GF@int GF@num
+WRITE GF@num
+WRITE string@\010
+
+IDIV GF@num GF@num GF@num
+WRITE GF@num
+WRITE string@\010
+
+WRITE string@\010
+
+CREATEFRAME
+DEFVAR TF@_
+DEFVAR TF@!
+MOVE TF@_ int@12
+
+IDIV TF@! TF@_ TF@_
+WRITE TF@!
+WRITE string@\010
+
+IDIV TF@! int@-18 TF@!
+WRITE TF@!
+WRITE string@\010
+
+IDIV TF@_ int@22 TF@!
+WRITE TF@_
+WRITE string@\010
+
+IDIV TF@_ int@1000 int@25
+WRITE TF@_
+WRITE string@\010
+
+WRITE string@\010
+
+PUSHFRAME
+WRITE LF@_
+WRITE string@\010
+WRITE LF@!
+WRITE string@\010
+
+IDIV LF@_ LF@_ int@-2
+WRITE LF@_
+WRITE string@\010
+
+IDIV LF@! int@-56 LF@!
+WRITE LF@!
+WRITE string@\010
+
+IDIV LF@! LF@_ LF@!
+WRITE LF@!
+WRITE string@\010
+
+IDIV LF@_ int@5 int@-5
+WRITE LF@_
+WRITE string@\010
+WRITE string@\010
+
+POPFRAME
+WRITE TF@_
+WRITE string@\010
+WRITE TF@!
+WRITE string@\010

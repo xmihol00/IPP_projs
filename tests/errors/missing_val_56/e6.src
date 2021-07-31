@@ -1,0 +1,8 @@
+.IPPcode21
+
+
+CALL lbl
+
+
+LABEL lbl
+RETURN

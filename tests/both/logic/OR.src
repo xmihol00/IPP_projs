@@ -1,0 +1,37 @@
+.IPPcode21
+
+CREATEFRAME
+PUSHFRAME
+
+DEFVAR LF@or
+DEFVAR LF@false
+DEFVAR LF@true
+
+MOVE LF@true bool@true
+MOVE LF@false bool@false
+
+OR LF@or LF@true LF@false
+WRITE LF@or
+WRITE string@\010
+
+OR LF@or bool@false LF@false
+WRITE LF@or
+WRITE string@\010
+
+OR LF@or LF@true bool@true
+WRITE LF@or
+WRITE string@\010
+
+OR LF@or LF@true LF@true
+WRITE LF@or
+WRITE string@\010
+
+OR LF@or LF@false LF@false
+WRITE LF@or
+WRITE string@\010
+
+POPFRAME
+
+OR TF@or TF@false bool@true
+WRITE TF@or
+WRITE string@\010

@@ -1,0 +1,22 @@
+.IPPcode21
+
+DEFVAR GF@var
+MOVE GF@var string@str1\010
+
+CALL f3
+WRITE TF@var
+WRITE GF@var
+
+DEFVAR GF@exit
+MOVE GF@exit int@0
+EXIT GF@exit
+
+LABEL f3
+CREATEFRAME
+DEFVAR TF@var
+MOVE TF@var string@str2\010
+WRITE TF@var
+PUSHFRAME
+WRITE LF@var
+POPFRAME
+RETURN

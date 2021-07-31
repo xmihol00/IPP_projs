@@ -1,0 +1,32 @@
+.IPPcode21
+
+CREATEFRAME
+DEFVAR TF@a
+MOVE TF@a int@128
+PUSHFRAME
+write LF@a
+write string@\010
+
+popframe
+write TF@a
+write string@\010
+
+CREATEFRAME
+PUSHFRAME
+DEFVAR LF@a
+MOVE LF@a int@51
+write LF@a
+write string@\010
+
+CREATEFRAME
+PUSHFRAME
+DEFVAR LF@a
+MOVE LF@a int@49
+write LF@a
+write string@\010
+
+popframe
+write LF@a
+write string@\010
+
+exit int@25

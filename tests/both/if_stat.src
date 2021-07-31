@@ -1,0 +1,164 @@
+.IPPcode21
+
+# compiler variables definition
+DEFVAR GF@?temp&1
+DEFVAR GF@?temp&2
+DEFVAR GF@?temp&3
+DEFVAR GF@?temp&4
+DEFVAR GF@?temp&5
+DEFVAR GF@?temp&6
+DEFVAR GF@?_&
+
+# variables of non recursive functions definition
+DEFVAR GF@d&18
+DEFVAR GF@c&17
+DEFVAR GF@b&16
+DEFVAR GF@err&15
+DEFVAR GF@a&14
+DEFVAR GF@i&13
+
+# registers definition
+DEFVAR GF@r%1&
+
+JUMP $main
+
+# $main: definition start
+LABEL $main
+
+# for statement start
+MOVE GF@i&13 int@0
+LABEL $main_for1
+LT GF@r%1& GF@i&13 int@5
+JUMPIFNEQ $main_forend1 GF@r%1& bool@true
+# input
+READ GF@a&14 int
+TYPE GF@?temp&2  GF@a&14
+JUMPIFEQ in?success&1 GF@?temp&2 string@int
+MOVE GF@err&15 int@1
+JUMP in?error&1
+LABEL in?success&1
+MOVE GF@err&15 int@0
+LABEL in?error&1
+
+
+# if statement start
+JUMPIFNEQ $main_if1_1 GF@err&15 int@0
+
+# if statement start
+GT GF@r%1& GF@a&14 int@0
+JUMPIFNEQ $main_if2_1 GF@r%1& bool@true
+WRITE string@a\032is\032positive\010
+JUMP $main_ifend2
+LABEL $main_if2_1
+JUMPIFNEQ $main_if2_2 GF@a&14 int@0
+WRITE string@a\032is\032zero\010
+JUMP $main_ifend2
+LABEL $main_if2_2
+WRITE string@a\032is\032negative\010
+LABEL $main_ifend2
+# if statement end
+
+JUMP $main_ifend1
+LABEL $main_if1_1
+WRITE string@wrong\032input\010
+LABEL $main_ifend1
+# if statement end
+
+# input
+READ GF@b&16 int
+TYPE GF@?temp&2  GF@b&16
+JUMPIFEQ in?success&2 GF@?temp&2 string@int
+MOVE GF@err&15 int@1
+JUMP in?error&2
+LABEL in?success&2
+MOVE GF@err&15 int@0
+LABEL in?error&2
+
+
+# if statement start
+JUMPIFNEQ $main_if3_1 GF@err&15 int@1
+WRITE string@wrong\032input\010
+JUMP $main_ifend3
+LABEL $main_if3_1
+
+# if statement start
+GT GF@r%1& GF@b&16 int@0
+JUMPIFNEQ $main_if4_1 GF@r%1& bool@true
+WRITE string@b\032is\032positive\010
+JUMP $main_ifend4
+LABEL $main_if4_1
+LT GF@r%1& GF@b&16 int@0
+JUMPIFNEQ $main_if4_2 GF@r%1& bool@true
+WRITE string@b\032is\032negative\010
+JUMP $main_ifend4
+LABEL $main_if4_2
+WRITE string@b\032is\032zero\010
+LABEL $main_ifend4
+# if statement end
+
+LABEL $main_ifend3
+# if statement end
+
+# input
+READ GF@c&17 bool
+TYPE GF@?temp&2  GF@c&17
+JUMPIFEQ in?success&3 GF@?temp&2 string@bool
+MOVE GF@err&15 int@1
+JUMP in?error&3
+LABEL in?success&3
+MOVE GF@err&15 int@0
+LABEL in?error&3
+
+
+# if statement start
+JUMPIFNEQ $main_if5_1 GF@err&15 int@0
+
+# if statement start
+JUMPIFNEQ $main_if6_1 bool@true GF@c&17
+WRITE string@c\032true\010
+JUMP $main_ifend6
+LABEL $main_if6_1
+NOT GF@r%1& GF@c&17
+JUMPIFNEQ $main_if6_2 GF@r%1& bool@true
+WRITE string@c\032false\010
+JUMP $main_ifend6
+LABEL $main_if6_2
+LABEL $main_ifend6
+# if statement end
+
+JUMP $main_ifend5
+LABEL $main_if5_1
+WRITE string@wrong\032input\010
+LABEL $main_ifend5
+# if statement end
+
+# input
+READ GF@d&18 string
+TYPE GF@?temp&2  GF@d&18
+JUMPIFEQ in?success&4 GF@?temp&2 string@string
+MOVE GF@err&15 int@1
+JUMP in?error&4
+LABEL in?success&4
+MOVE GF@err&15 int@0
+LABEL in?error&4
+
+
+# if statement start
+JUMPIFNEQ $main_if7_1 GF@err&15 int@1
+WRITE string@wrong\032input\010
+JUMP $main_ifend7
+LABEL $main_if7_1
+WRITE string@input:\032
+WRITE GF@d&18
+WRITE string@\010
+LABEL $main_ifend7
+# if statement end
+
+ADD GF@i&13 GF@i&13 int@1
+JUMP $main_for1
+LABEL $main_forend1
+# for statement end
+
+EXIT int@0
+# $main: definition end
+

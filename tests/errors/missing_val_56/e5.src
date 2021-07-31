@@ -1,0 +1,10 @@
+.IPPcode21
+
+DEFVAR GF@pop
+PUSHS int@5
+PUSHS int@6
+PUSHS int@7
+POPS GF@pop
+POPS GF@pop
+POPS GF@pop
+POPS GF@pop

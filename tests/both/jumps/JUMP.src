@@ -1,0 +1,23 @@
+.IPPcode21
+
+WRITE string@jumping\032at\032label1\010
+JUMP label1
+
+WRITE string@jump\0321\032failed\010
+LABEL label1
+WRITE string@label1\032here\010
+
+JUMP skip
+
+LABEL label2
+
+WRITE string@jumping\032back\032down\010
+JUMP label3
+
+LABEL skip
+
+WRITE string@jumping\032above\010
+JUMP label2
+
+LABEL label3
+WRITE string@down\032is\032here\010

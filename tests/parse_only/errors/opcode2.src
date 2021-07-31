@@ -1,0 +1,5 @@
+.IPPcode21
+
+ADD GF@a GF@b GF@c
+
+xADD GF@x int@1 int@2

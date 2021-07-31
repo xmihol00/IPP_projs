@@ -1,0 +1,76 @@
+.IPPcode21
+
+CREATEFRAME
+DEFVAR TF@lt
+DEFVAR TF@i1
+DEFVAR TF@i2
+DEFVAR GF@s1
+DEFVAR GF@s2
+
+MOVE TF@i1 int@5
+MOVE TF@i2 int@6
+MOVE GF@s1 string@123
+MOVE GF@s2 string@23
+
+LT TF@lt TF@i1 TF@i2
+WRITE TF@lt
+WRITE string@\010
+
+LT TF@lt TF@i2 TF@i1
+WRITE TF@lt
+WRITE string@\010
+
+LT TF@lt GF@s1 GF@s2
+WRITE TF@lt
+WRITE string@\010
+
+LT TF@lt GF@s2 GF@s1
+WRITE TF@lt
+WRITE string@\010
+
+LT TF@lt TF@i1 int@-5
+WRITE TF@lt
+WRITE string@\010
+
+LT TF@lt int@-5 TF@i2
+WRITE TF@lt
+WRITE string@\010
+
+LT TF@lt int@-5 int@-9
+WRITE TF@lt
+WRITE string@\010
+
+LT TF@lt GF@s1 string@123
+WRITE TF@lt
+WRITE string@\010
+
+DEFVAR GF@true
+MOVE GF@true bool@true
+
+DEFVAR GF@false
+MOVE GF@false bool@false
+
+LT TF@lt GF@true GF@false
+WRITE TF@lt
+WRITE string@\010
+
+LT TF@lt GF@true GF@true
+WRITE TF@lt
+WRITE string@\010
+
+LT TF@lt bool@false GF@true
+WRITE TF@lt
+WRITE string@\010
+
+LT TF@lt bool@false bool@false
+WRITE TF@lt
+WRITE string@\010
+
+LT TF@lt bool@true bool@false
+WRITE TF@lt
+WRITE string@\010
+
+LT TF@lt GF@false GF@true
+WRITE TF@lt
+WRITE string@\010
+

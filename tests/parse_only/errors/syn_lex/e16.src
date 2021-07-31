@@ -1,0 +1,3 @@
+.IPPcode21
+
+JUMPIFEQ GF@var GF@a int@95

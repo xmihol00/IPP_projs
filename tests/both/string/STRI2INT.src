@@ -1,0 +1,27 @@
+.IPPcode21
+
+DEFVAR GF@ord
+DEFVAR GF@str
+DEFVAR GF@pos
+
+MOVE GF@str string@ABCDEFG
+MOVE GF@pos int@5
+STRI2INT GF@ord GF@str GF@pos
+WRITE GF@ord
+WRITE string@\010
+
+STRI2INT GF@ord GF@str int@0
+WRITE GF@ord
+WRITE string@\010
+
+STRI2INT GF@ord GF@str int@6
+WRITE GF@ord
+WRITE string@\010
+
+STRI2INT GF@ord string@abd int@1
+WRITE GF@ord
+WRITE string@\010
+
+STRI2INT GF@ord string@aabbcc GF@pos
+WRITE GF@ord
+WRITE string@\010

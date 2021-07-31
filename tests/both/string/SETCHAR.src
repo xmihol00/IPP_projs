@@ -1,0 +1,20 @@
+
+.IPPcode21
+
+DEFVAR GF@rplc
+MOVE GF@rplc string@&!
+
+DEFVAR GF@str
+MOVE GF@str string@AAAAAAAAAA
+
+SETCHAR GF@str int@3 GF@rplc
+WRITE GF@str
+WRITE string@\010
+
+SETCHAR GF@str int@9 string@BBB
+WRITE GF@str
+WRITE string@\010
+
+SETCHAR GF@str int@0 GF@rplc
+WRITE GF@str
+WRITE string@\010

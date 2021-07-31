@@ -1,0 +1,72 @@
+.IPPcode21
+
+CREATEFRAME
+PUSHFRAME
+
+DEFVAR LF@res
+DEFVAR LF@e
+DEFVAR LF@f
+
+MOVE LF@e int@15
+MOVE LF@f int@10
+
+EQ LF@res LF@e LF@f
+WRITE LF@res
+WRITE string@\010
+
+ADD LF@e LF@f int@0
+
+EQ LF@res LF@e LF@f
+WRITE LF@res
+WRITE string@\010
+
+EQ LF@res int@1 int@2
+WRITE LF@res
+WRITE string@\010
+
+EQ LF@res string@abc string@abc
+WRITE LF@res
+WRITE string@\010
+
+DEFVAR GF@str
+MOVE GF@str string@abc
+EQ LF@res string@abc GF@str
+WRITE LF@res
+WRITE string@\010
+
+EQ LF@res GF@str string@def
+WRITE LF@res
+WRITE string@\010
+
+POPFRAME
+
+DEFVAR GF@nil 
+MOVE GF@nil nil@nil
+
+EQ TF@res GF@str GF@nil
+WRITE TF@res
+WRITE string@\010
+
+EQ TF@res nil@nil GF@nil
+WRITE TF@res
+WRITE string@\010
+
+EQ TF@res nil@nil nil@nil
+WRITE TF@res
+WRITE string@\010
+
+EQ TF@res int@88 nil@nil
+WRITE TF@res
+WRITE string@\010
+
+EQ TF@res GF@nil TF@res
+WRITE TF@res
+WRITE string@\010
+
+EQ TF@res GF@nil GF@nil
+WRITE TF@res
+WRITE string@\010
+
+EQ TF@res GF@nil string@test
+WRITE TF@res
+WRITE string@\010

@@ -1,0 +1,37 @@
+.IPPcode21
+
+DEFVAR GF@num1
+DEFVAR GF@num2
+
+MOVE GF@num1 bool@true
+MOVE GF@num2 GF@num1
+
+PUSHS GF@num1
+PUSHS GF@num2
+ORS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+PUSHS GF@num1
+NOTS
+PUSHS GF@num2
+ORS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+PUSHS bool@false
+PUSHS GF@num1
+NOTS
+ORS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+PUSHS bool@true
+PUSHS bool@false
+ORS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010

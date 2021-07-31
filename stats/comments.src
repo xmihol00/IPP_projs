@@ -1,0 +1,15 @@
+#
+# comments: 9
+
+.IPPcode21 #
+
+DEFVAR GF@abc#comment
+
+PUSHS int@10 #
+
+POPS GF@abc #x
+
+ADD GF@abc int@1 int@2#test
+
+#ahoj
+#cau :)

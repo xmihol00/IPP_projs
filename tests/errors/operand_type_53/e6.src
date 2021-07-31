@@ -1,0 +1,5 @@
+.IPPcode21
+
+DEFVAR GF@var
+
+NOT GF@var int@8

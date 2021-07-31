@@ -1,0 +1,8 @@
+.IPPcode21
+
+CREATEFRAME
+DEFVAR GF@a
+DEFVAR GF@b
+DEFVAR GF@C
+
+ADD GF@d int@1 int@2

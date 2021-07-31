@@ -1,0 +1,68 @@
+.IPPcode21
+
+DEFVAR GF@len
+STRLEN GF@len string@ahoj
+WRITE GF@len
+WRITE string@\010
+
+DEFVAR GF@string 
+MOVE GF@string string@string
+STRLEN GF@len GF@string
+WRITE GF@len
+WRITE string@\010
+
+STRLEN GF@string GF@string
+WRITE GF@string
+WRITE string@\010
+
+MOVE GF@string string@string\032:D
+WRITE string@\010
+
+CREATEFRAME
+DEFVAR TF@len
+
+STRLEN TF@len string@\120\065\898
+WRITE TF@len
+WRITE string@\010
+
+STRLEN TF@len string@1\120\065\8985
+WRITE TF@len
+WRITE string@\010
+
+DEFVAR TF@string
+MOVE TF@string string@:)
+STRLEN TF@len TF@string
+WRITE TF@len
+WRITE string@\010
+
+STRLEN TF@len GF@string
+WRITE TF@len
+WRITE string@\010
+
+WRITE string@\010
+
+PUSHFRAME
+STRLEN LF@len LF@string
+WRITE LF@len
+WRITE string@\010
+
+DEFVAR LF@var
+MOVE LF@var string@---
+STRLEN GF@len LF@var
+WRITE GF@len
+WRITE string@\010
+
+WRITE string@\010
+
+POPFRAME
+STRLEN TF@len TF@string
+WRITE TF@len
+WRITE string@\010
+
+STRLEN TF@len GF@string
+WRITE TF@len
+WRITE string@\010
+
+STRLEN GF@len TF@var
+WRITE GF@len
+WRITE string@\010

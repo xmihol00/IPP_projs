@@ -1,0 +1,35 @@
+.IPPcode21
+
+DEFVAR GF@char
+
+GETCHAR GF@char string@123456 int@2
+WRITE GF@char
+WRITE string@\010
+
+DEFVAR GF@str
+MOVE GF@str string@abcdefgh
+
+GETCHAR GF@char GF@str int@5
+WRITE GF@char
+WRITE string@\010
+
+DEFVAR GF@num
+MOVE GF@num int@0
+
+GETCHAR GF@char GF@str GF@num
+WRITE GF@char
+WRITE string@\010
+
+GETCHAR GF@char string@XYZ GF@num
+WRITE GF@char
+WRITE string@\010
+
+CREATEFRAME
+PUSHFRAME
+
+DEFVAR LF@str1
+MOVE LF@str1 string@:D
+DEFVAR LF@int
+GETCHAR LF@int LF@str1 int@1
+WRITE LF@int
+WRITE string@\010

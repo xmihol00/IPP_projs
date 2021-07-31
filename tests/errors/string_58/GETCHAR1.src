@@ -1,0 +1,5 @@
+.IPPcode21
+
+DEFVAR GF@var
+
+GETCHAR GF@var string@string int@-1

@@ -1,0 +1,62 @@
+.IPPcode21
+
+DEFVAR GF@num1
+DEFVAR GF@num2
+
+PUSHS int@25
+PUSHS int@74
+LTS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+PUSHS int@85
+PUSHS int@63
+LTS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+MOVE GF@num1 string@abc
+PUSHS GF@num1
+PUSHS string@abd
+LTS
+POPS GF@num2
+WRITE GF@num2
+WRITE string@\010
+
+PUSHS string@bbb
+PUSHS GF@num1
+LTS
+POPS GF@num2
+WRITE GF@num2
+WRITE string@\010
+
+PUSHS GF@num2
+PUSHS bool@true
+LTS
+POPS GF@num2
+WRITE GF@num2
+WRITE string@\010
+
+PUSHS GF@num2
+PUSHS bool@true
+LTS
+POPS GF@num2
+WRITE GF@num2
+WRITE string@\010
+
+PUSHS float@0x1.6cp+4
+PUSHS float@0x1.a4p+5
+LTS
+POPS GF@num2
+WRITE GF@num2
+WRITE string@\010
+
+MOVE GF@num1 float@0x1.51p+6
+PUSHS GF@num1
+PUSHS float@0x1.a4p+5
+LTS
+POPS GF@num2
+WRITE GF@num2
+WRITE string@\010

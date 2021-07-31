@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program language="IPPcode21">
+  <instruction order="1" opcode="DEFVAR">
+    <arg1 type="var">GF@x</arg1>
+  </instruction>
+  <instruction order="2" opcode="CREATEFRAME"/>
+  <instruction order="3" opcode="DEFVAR">
+    <arg1 type="var">TF@y</arg1>
+  </instruction>
+  <instruction order="4" opcode="PUSHFRAME"/>
+  <instruction order="5" opcode="DEFVAR">
+    <arg1 type="var">LF@z</arg1>
+  </instruction>
+  <instruction order="6" opcode="MOVE">
+    <arg1 type="var">GF@x</arg1>
+    <arg2 type="int">123</arg2>
+  </instruction>
+  <instruction order="7" opcode="MOVE">
+    <arg1 type="var">GF@x</arg1>
+    <arg2 type="float">0x1p+0</arg2>
+  </instruction>
+  <instruction order="8" opcode="MOVE">
+    <arg1 type="var">GF@x</arg1>
+    <arg2 type="bool">tr ue</arg2>
+  </instruction>
+  <instruction order="9" opcode="MOVE">
+    <arg1 type="var">GF@x</arg1>
+    <arg2 type="string">ahoj\010</arg2>
+  </instruction>
+  <instruction order="10" opcode="WRITE">
+    <arg1 type="var">GF@x</arg1>
+  </instruction>
+  <instruction order="11" opcode="WRITE">
+    <arg1 type="string">\010</arg1>
+  </instruction>
+  <instruction order="12" opcode="DIV">
+    <arg1 type="var">GF@x</arg1>
+    <arg2 type="float">0x1p+0</arg2>
+    <arg3 type="float">0x1p+0</arg3>
+  </instruction>
+  <instruction order="13" opcode="WRITE">
+    <arg1 type="var">GF@x</arg1>
+  </instruction>
+  <instruction order="14" opcode="WRITE">
+    <arg1 type="string">\010</arg1>
+  </instruction>
+</program>

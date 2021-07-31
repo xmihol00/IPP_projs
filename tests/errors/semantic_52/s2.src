@@ -1,0 +1,4 @@
+.IPPcode21
+
+DEFVAR GF@AD
+JUMPIFEQ label GF@AD int@8

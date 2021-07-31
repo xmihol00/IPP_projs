@@ -1,0 +1,8 @@
+
+.IFJcode20
+
+DEFVAR GF@var
+READ GF@var float
+
+Write GF@var
+write string@\010

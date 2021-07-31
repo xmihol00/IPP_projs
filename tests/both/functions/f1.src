@@ -1,0 +1,8 @@
+.IPPcode21
+
+CALL f1
+EXIT int@0
+
+LABEL f1
+WRITE string@hello\010
+RETURN

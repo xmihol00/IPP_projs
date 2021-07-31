@@ -1,0 +1,9 @@
+.IPPcode21
+
+DEFVAR GF@var
+
+PUSHS int@2
+POPS GF@var
+
+WRITE GF@var
+WRITE string@\010

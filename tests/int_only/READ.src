@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program language="IPPcode21">
+  <instruction order="1" opcode="DEFVAR">
+    <arg1 type="var">GF@x</arg1>
+  </instruction>
+  <instruction order="2" opcode="DEFVAR">
+    <arg1 type="var">GF@y</arg1>
+  </instruction>
+  <instruction order="3" opcode="READ">
+    <arg1 type="var">GF@x</arg1>
+    <arg2 type="type">int</arg2>
+  </instruction>
+  <instruction order="4" opcode="WRITE">
+    <arg1 type="var">GF@x</arg1>
+  </instruction>
+  <instruction order="5" opcode="WRITE">
+    <arg1 type="string">\010</arg1>
+  </instruction>
+  <instruction order="6" opcode="TYPE">
+    <arg1 type="var">GF@x</arg1>
+    <arg2 type="var">GF@x</arg2>
+  </instruction>
+  <instruction order="7" opcode="WRITE">
+    <arg1 type="var">GF@x</arg1>
+  </instruction>
+  <instruction order="8" opcode="WRITE">
+    <arg1 type="string">\010</arg1>
+  </instruction>
+  <instruction order="9" opcode="READ">
+    <arg1 type="var">GF@y</arg1>
+    <arg2 type="type">float</arg2>
+  </instruction>
+  <instruction order="10" opcode="WRITE">
+    <arg1 type="var">GF@y</arg1>
+  </instruction>
+  <instruction order="11" opcode="WRITE">
+    <arg1 type="string">\010</arg1>
+  </instruction>
+  <instruction order="12" opcode="TYPE">
+    <arg1 type="var">GF@y</arg1>
+    <arg2 type="var">GF@y</arg2>
+  </instruction>
+  <instruction order="13" opcode="WRITE">
+    <arg1 type="var">GF@y</arg1>
+  </instruction>
+  <instruction order="14" opcode="WRITE">
+    <arg1 type="string">\010</arg1>
+  </instruction>
+  <instruction order="15" opcode="READ">
+    <arg1 type="var">GF@y</arg1>
+    <arg2 type="type">string</arg2>
+  </instruction>
+  <instruction order="16" opcode="WRITE">
+    <arg1 type="var">GF@y</arg1>
+  </instruction>
+  <instruction order="17" opcode="WRITE">
+    <arg1 type="string">\010</arg1>
+  </instruction>
+  <instruction order="18" opcode="TYPE">
+    <arg1 type="var">GF@y</arg1>
+    <arg2 type="var">GF@y</arg2>
+  </instruction>
+  <instruction order="19" opcode="WRITE">
+    <arg1 type="var">GF@y</arg1>
+  </instruction>
+  <instruction order="20" opcode="WRITE">
+    <arg1 type="string">\010</arg1>
+  </instruction>
+</program>

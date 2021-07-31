@@ -1,0 +1,34 @@
+.IPPcode21
+
+DEFVAR GF@num1
+DEFVAR GF@num2
+
+PUSHS int@45
+PUSHS int@10
+SUBS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+PUSHS float@0x1.f9p+5
+PUSHS float@0x1.56p+6
+SUBS
+POPS GF@num2
+WRITE GF@num2
+WRITE string@\010
+
+PUSHS GF@num1
+INT2FLOATS
+PUSHS GF@num2
+SUBS
+POPS GF@num2
+WRITE GF@num2
+WRITE string@\010
+
+PUSHS int@45
+PUSHS GF@num2
+FLOAT2INTS
+SUBS
+POPS GF@num2
+WRITE GF@num2
+WRITE string@\010

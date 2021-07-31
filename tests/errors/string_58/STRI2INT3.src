@@ -1,0 +1,6 @@
+.IPPcode21
+
+DEFVAR GF@str
+DEFVAR GF@int
+MOVE GF@str string@
+STRI2int GF@int GF@str int@0

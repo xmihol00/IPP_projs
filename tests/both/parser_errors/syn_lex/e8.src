@@ -1,0 +1,4 @@
+.IPPcode21
+
+DEFVAR GF@x
+AND GF@x bool@test bool@true

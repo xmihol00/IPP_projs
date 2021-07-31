@@ -1,0 +1,23 @@
+.IPPcode21
+
+DEFVAR GF@val
+
+READ GF@val string
+WRITE GF@val
+WRITE string@\010
+
+READ GF@val int
+WRITE GF@val
+WRITE string@\010
+
+READ GF@val bool
+WRITE GF@val
+WRITE string@\010
+
+READ GF@val bool
+WRITE GF@val
+WRITE string@\010
+
+READ GF@val bool
+WRITE GF@val
+WRITE string@\010

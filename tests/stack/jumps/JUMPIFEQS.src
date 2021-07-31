@@ -1,0 +1,22 @@
+.IPPcode21
+
+DEFVAR GF@num1
+DEFVAR GF@num2
+
+MOve GF@num2 int@6
+MOVE GF@num1 int@5
+
+label label
+
+PUSHS GF@num1
+PUSHS GF@num2
+JUMPIFEQS end
+WRITE string@no\032jump\010
+
+ADD GF@num1 GF@num1 int@1
+PUSHS GF@num1
+PUSHS int@6
+JUMPIFEQS label
+
+label end
+WRITE string@jump\010

@@ -1,0 +1,70 @@
+.IPPcode21
+
+DEFVAR GF@gt
+DEFVAR GF@i
+DEFVAR GF@j
+
+MOVE GF@i int@5
+MOVE GF@j int@10
+
+GT GF@gt GF@i GF@j
+WRITE GF@gt
+WRITE string@\010
+
+GT GF@gt GF@j GF@i
+WRITE GF@gt
+WRITE string@\010
+
+GT GF@gt int@7 GF@i
+WRITE GF@gt
+WRITE string@\010
+
+GT GF@gt int@-25 GF@i
+WRITE GF@gt
+WRITE string@\010
+
+GT GF@gt int@-25 int@-30
+WRITE GF@gt
+WRITE string@\010
+
+GT GF@gt GF@i int@8
+WRITE GF@gt
+WRITE string@\010
+
+DEFVAR GF@str 
+MOVE GF@str string@bbb
+
+GT GF@gt GF@str string@aa
+WRITE GF@gt
+WRITE string@\010
+
+GT GF@gt string@aa GF@str
+WRITE GF@gt
+WRITE string@\010
+
+GT GF@gt GF@str GF@str
+WRITE GF@gt
+WRITE string@\010
+
+DEFVAR GF@true
+MOVE GF@true bool@true
+
+GT GF@gt GF@true bool@false
+WRITE GF@gt
+WRITE string@\010
+
+GT GF@gt GF@true GF@true
+WRITE GF@gt
+WRITE string@\010
+
+GT GF@gt bool@false GF@true
+WRITE GF@gt
+WRITE string@\010
+
+GT GF@gt bool@false bool@false
+WRITE GF@gt
+WRITE string@\010
+
+GT GF@gt bool@true bool@false
+WRITE GF@gt
+WRITE string@\010

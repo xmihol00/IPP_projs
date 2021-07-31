@@ -1,0 +1,9 @@
+.IPPcode21
+
+WRITE nil@nil
+WRITE string@\010
+
+DEFVAR GF@nil
+MOVE GF@nil nil@nil
+WRITE GF@nil
+WRITE string@\010

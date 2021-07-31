@@ -1,0 +1,6 @@
+.IPPcode21
+
+DEFVAR GF@char
+INT2CHAR GF@char int@89654799
+WRITE GF@char
+WRITE string@\010

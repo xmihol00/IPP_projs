@@ -1,0 +1,29 @@
+.IPPcode21
+
+DEFVAR GF@num1
+DEFVAR GF@num2
+DEFVAR GF@bool
+
+MOVE GF@num1 int@5
+MOVE GF@num2 int@6
+MOVE GF@bool bool@false
+
+
+WRITE string@jumping\032at\032lbl1,\032jump\032should\032fail\010
+JUMPIFEQ lbl1 GF@num1 GF@num2
+WRITE string@jump\032failed\010
+
+LABEL lbl2
+ADD GF@num1 GF@num1 int@1
+WRITE string@this\032appears\032twice\010
+JUMPIFEQ lbl2 GF@num1 GF@num2
+
+LABEL lbl1
+
+JUMPIFEQ lbl3 GF@bool bool@false
+WRITE string@unvisible
+LABEL lbl3
+
+JUMPIFEQ lbl3 string@str2 string@str1
+WRITE string@not\032same\032strings\010
+

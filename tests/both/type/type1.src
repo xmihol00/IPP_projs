@@ -1,0 +1,24 @@
+.IPPcode21
+
+DEFVAR GF@type
+DEFVAR GF@var
+
+MOVE GF@var int@1
+TYPE GF@type GF@var
+WRITE GF@type
+WRITE string@\010
+
+MOVE GF@var string@a
+TYPE GF@type GF@var
+WRITE GF@type
+WRITE string@\010
+
+MOVE GF@var bool@false
+TYPE GF@type GF@var
+WRITE GF@type
+WRITE string@\010
+
+MOVE GF@var nil@nil
+TYPE GF@type GF@var
+WRITE GF@type
+WRITE string@\010

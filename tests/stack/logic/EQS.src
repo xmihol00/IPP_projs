@@ -1,0 +1,104 @@
+.IPPcode21
+
+DEFVAR GF@num1
+DEFVAR GF@num2
+
+PUSHS int@0
+PUSHS int@0
+EQS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+MOVE GF@num1 int@8
+PUSHS int@7
+PUSHS GF@num1
+EQS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+MOVE GF@num2 string@ahoj
+PUSHS GF@num2
+PUSHS GF@num2
+EQS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+PUSHS GF@num2
+PUSHS string@cau
+EQS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+PUSHS nil@nil
+PUSHS nil@nil
+EQS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+PUSHS int@10
+PUSHS nil@nil
+EQS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+PUSHS nil@nil
+PUSHS string@:D
+EQS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+PUSHS nil@nil
+PUSHS float@0x1.7p+3
+EQS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+PUSHS float@0x1.7p+3
+PUSHS float@0x1.7p+3
+EQS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+PUSHS float@-0x1.3a147ae147ae1p+6
+PUSHS float@0x1.7p+3
+EQS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+PUSHS float@-0x1.7p+3
+PUSHS float@0x1.7p+3
+EQS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+PUSHS bool@false
+PUSHS bool@true
+EQS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+PUSHS bool@true
+PUSHS bool@true
+EQS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010
+
+PUSHS bool@false
+PUSHS bool@false
+EQS
+POPS GF@num1
+WRITE GF@num1
+WRITE string@\010

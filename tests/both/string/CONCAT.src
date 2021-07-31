@@ -1,0 +1,40 @@
+.IPPcode21
+
+DEFVAR GF@res
+CONCAT GF@res string@ABC string@abc
+WRITE GF@res
+WRITE string@\010
+
+DEFVAR GF@str1
+MOVE GF@str1 string@ahoj\032
+DEFVAR GF@str2
+MOVE GF@str2 string@čau
+
+CONCAT GF@res GF@str1 GF@str2
+WRITE GF@res
+WRITE string@\010
+
+CONCAT GF@res string@dobrej\032den\032 GF@str2
+WRITE GF@res
+WRITE string@\010
+
+CONCAT GF@res GF@str1 string@\032zdravím!
+WRITE GF@res
+WRITE string@\010
+
+CREATEFRAME
+PUSHFRAME
+
+DEFVAR LF@str1
+MOVE LF@str1  string@LOL
+
+CONCAT GF@res GF@str1 LF@str1
+WRITE GF@res
+WRITE string@\010
+
+
+CONCAT GF@res string@ěščřžý string@áíéůň
+WRITE GF@res
+WRITE string@\010
+
+

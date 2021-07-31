@@ -1,0 +1,18 @@
+.IPPcode21
+DEFVAR GF@type
+
+TYPE GF@type int@8
+WRITE GF@type
+WRITE string@\010
+
+TYPE GF@type string@
+WRITE GF@type
+WRITE string@\010
+
+TYPE GF@type bool@true
+WRITE GF@type
+WRITE string@\010
+
+TYPE GF@type nil@nil
+WRITE GF@type
+WRITE string@\010

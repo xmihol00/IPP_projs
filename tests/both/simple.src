@@ -1,0 +1,48 @@
+.IPPcode21
+
+DEFVAR GF@a
+MOVE GF@a int@15
+DEFVAR GF@b
+MOVE GF@b int@15
+DEFVAR GF@c
+SUB GF@c GF@a GF@b
+WRITE GF@c
+WRITE string@\010
+WRITE GF@a
+WRITE string@\010
+WRITE GF@b
+WRITE string@\010
+
+DEFVAR GF@d
+DEFVAR GF@e
+READ GF@d string
+READ GF@e string
+CONCAT GF@d GF@d GF@e
+WRITE GF@d
+WRITE string@\010
+
+LT GF@d GF@d GF@e
+WRITE GF@d
+WRITE string@\010
+
+EQ GF@e GF@e string@ahoj
+
+AND GF@d GF@d GF@e
+WRITE GF@d
+WRITE string@\010
+
+int2CHAR GF@a int@65
+WRITE GF@a
+WRITE string@\010
+
+STRi2int GF@b string@ABCD int@2
+WRITE GF@b
+WRITE string@\010
+
+GETCHAR GF@b string@EFGH int@3
+WRITE GF@b
+WRITE string@\010
+
+GETCHAR GF@b string@EFGH int@0
+WRITE GF@b
+WRITE string@\010

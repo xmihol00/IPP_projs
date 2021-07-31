@@ -1,0 +1,19 @@
+.IPPcode21
+
+DEFVAR GF@x
+
+CREATEFRAME
+DEFVAR TF@y
+ADD TF@y int@10 int@20
+PUSHFRAME
+WRITE LF@y
+WRITE  string@\010
+POPFRAME
+
+SUB TF@y TF@y TF@y
+WRITE TF@y
+WRITE  string@\010
+PUSHFRAME
+MUL LF@y int@2 int@9
+WRITE LF@y
+WRITE  string@\010

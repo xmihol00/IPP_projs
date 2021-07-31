@@ -1,0 +1,20 @@
+.IPPcode21
+
+CREATEFRAME
+PUSHFRAME
+
+DEFVAR LF@var
+PUSHS string@
+
+POPS LF@var
+WRITE LF@var
+WRITE string@\010
+
+CONCAT LF@var LF@var string@@@@
+PUSHS LF@var
+
+POPFRAME
+
+POPS TF@var
+WRITE TF@var
+WRITE string@\010

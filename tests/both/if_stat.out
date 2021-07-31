@@ -1,0 +1,20 @@
+a is positive
+b is positive
+c true
+input: test1
+wrong input
+b is zero
+c false
+input: test2
+a is zero
+wrong input
+c false
+input: test3
+a is negative
+b is zero
+c true
+input: test4
+wrong input
+wrong input
+c false
+input: test5
